@@ -23,10 +23,10 @@ pip install tqdm pyyaml
 ## Instalação
 
 ```bash
-git clone https://github.com/seu-usuario/secengine.git
-cd secengine
+git clone https://github.com/zeikne/vatiuz.git
+cd vatiuz
 pip install -r requirements.txt   # ou: pip install tqdm pyyaml
-chmod +x secengine.py
+chmod +x vatiuz.py
 ```
 
 ---
@@ -36,35 +36,35 @@ chmod +x secengine.py
 ### Recon
 ```bash
 # Domínio único
-python3 secengine.py -m recon -d exemplo.com.br
+python3 vatiuz.py -m recon -d exemplo.com.br
 
 # Vários domínios
-python3 secengine.py -m recon -d "site1.com,site2.com.br"
+python3 vatiuz.py -m recon -d "site1.com,site2.com.br"
 
 # Lista de domínios em arquivo
-python3 secengine.py -m recon -d dominios.txt
+python3 vatiuz.py -m recon -d dominios.txt
 
 # Modo ativo (Amass)
-python3 secengine.py -m recon -d exemplo.com.br --active
+python3 vatiuz.py -m recon -d exemplo.com.br --active
 ```
 
 ### Secret Scanner
 ```bash
 # Varredura completa (arquivos + histórico Git)
-python3 secengine.py -m secrets -t /caminho/do/projeto
+python3 vatiuz.py -m secrets -t /caminho/do/projeto
 
 # Sem varrer histórico Git
-python3 secengine.py -m secrets -t /caminho/do/projeto --no-git
+python3 vatiuz.py -m secrets -t /caminho/do/projeto --no-git
 ```
 
 ### Modo Full (Recon + Secrets)
 ```bash
-python3 secengine.py -m full -d exemplo.com.br -t /caminho/do/projeto
+python3 vatiuz.py -m full -d exemplo.com.br -t /caminho/do/projeto
 ```
 
 ### Com arquivo de configuração
 ```bash
-python3 secengine.py -m full -d exemplo.com.br -t ./projeto -c config.yaml -v
+python3 vatiuz.py -m full -d exemplo.com.br -t ./projeto -c config.yaml -v
 ```
 
 ---
