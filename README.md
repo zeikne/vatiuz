@@ -1,8 +1,6 @@
 # VATIUZ v3.1
 
-**Framework Unificado de Segurança — Recon Vertical + Secret Scanner**
 
-Ferramenta modular desenvolvida para automação de reconhecimento de ativos externos e detecção de segredos em código-fonte (incluindo histórico Git). Ideal para portfólio de Pentest / DevSecOps / Bug Bounty.
 
 ---
 
