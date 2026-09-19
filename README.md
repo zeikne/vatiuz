@@ -1,4 +1,4 @@
-# SECENGINE v3.1
+# VATIUZ v3.1
 
 **Framework Unificado de Segurança — Recon Vertical + Secret Scanner**
 
