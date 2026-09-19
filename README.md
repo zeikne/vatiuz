@@ -116,43 +116,6 @@ python3 secengine.py -m full -d exemplo.com.br -t ./projeto -c config.yaml -v
 
 ---
 
-## Estrutura de Saída
-
-```
-outputs/
-├── secengine.log
-├── recon/
-│   └── exemplo.com.br/
-│       ├── subdominios_unicos.txt
-│       ├── hosts_vivos.txt
-│       ├── httpx_results.jsonl
-│       └── ...
-│   └── recon_report.json
-└── secrets/
-    └── secret_scan_report.json
-```
-
----
-
-## Exemplo de Configuração (`config.yaml`)
-
-```yaml
-timeout: 600
-passive: true
-max_file_size_mb: 5.0
-scan_git: true
-max_git_commits: 300
-verbose: false
-```
-
----
-
-## Observações Técnicas
-
-- Todos os subprocessos possuem timeout e tratamento de `UnicodeDecodeError` (`errors="ignore"`).
-- A leitura de arquivos é feita **linha por linha** para economizar memória.
-- O scanner de histórico Git limita a quantidade de commits e o tamanho dos patches para evitar consumo excessivo de recursos.
-- Falsos positivos comuns (exemplos de documentação, placeholders, etc.) são filtrados automaticamente.
 
 ---
 
