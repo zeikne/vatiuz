@@ -116,14 +116,3 @@ python3 secengine.py -m full -d exemplo.com.br -t ./projeto -c config.yaml -v
 
 ---
 
-
----
-
-## Aviso Legal
-
-Esta ferramenta foi desenvolvida para fins educacionais e de testes autorizados.  
-O uso indevido contra sistemas sem permissão é ilegal. Use com responsabilidade.
-
----
-
-**Desenvolvido para portfólio técnico de Pentest / DevSecOps**
