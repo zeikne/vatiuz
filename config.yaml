@@ -1,0 +1,25 @@
+# ==============================================
+# VATIUZ v3.1 - Arquivo de Configuração
+# ==============================================
+# Copie este arquivo e ajuste conforme necessário.
+# Uso: python3 vatiuz.py -m full -d exemplo.com -t ./projeto -c config.yaml
+
+# Timeout padrão (em segundos) para cada ferramenta externa
+timeout: 600
+
+# Modo do Amass: true = passivo (mais silencioso), false = ativo
+passive: true
+
+# Tamanho máximo de arquivo a ser escaneado (em MB)
+# Arquivos maiores serão ignorados para evitar consumo excessivo de memória
+max_file_size_mb: 5.0
+
+# Varre o histórico do Git em busca de secrets?
+scan_git: true
+
+# Número máximo de commits a analisar no histórico do Git
+# Valores muito altos podem deixar o scan lento
+max_git_commits: 300
+
+# Log mais detalhado (também pode ser ativado com -v)
+verbose: false
