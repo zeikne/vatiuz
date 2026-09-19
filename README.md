@@ -1,4 +1,4 @@
-# VATIUZ v3.1
+# VATIUZ
 
 ---
 
