@@ -137,7 +137,6 @@ def calculate_shannon_entropy(data: str) -> float:
     return entropy
 
 def run_cmd(cmd: List[str], timeout: int = 300, capture: bool = True) -> Tuple[int, str, str]:
-    """Executa comando com timeout e captura segura (à prova de caracteres inválidos)"""
     try:
         result = subprocess.run(
             cmd,
@@ -377,7 +376,6 @@ def scan_line_for_secrets(line: str, line_num: int, source: str) -> List[Dict]:
     return findings
 
 def scan_file(file_path: Path, max_size_mb: float = 5.0) -> List[Dict]:
-    """Lê o arquivo linha por linha (economia de memória)"""
     try:
         size_mb = file_path.stat().st_size / (1024 * 1024)
         if size_mb > max_size_mb:
