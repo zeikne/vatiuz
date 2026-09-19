@@ -1,36 +1,5 @@
 # VATIUZ v3.1
 
-
-
----
-
-## Funcionalidades
-
-### Módulo de Recon
-- Enumeração de subdomínios com **Subfinder**, **Assetfinder** e **Amass**
-- Execução paralela das ferramentas
-- Normalização e deduplicação agressiva de resultados
-- Validação de hosts vivos com **HTTPX** (status code, title, tecnologias)
-- Modo passivo ou ativo
-- Suporte a múltiplos domínios (lista ou arquivo)
-- Relatório estruturado em JSON
-
-### Módulo de Secret Scanner
-- Dezenas de padrões de detecção (AWS, GCP, Azure, GitHub, Slack, Stripe, Twilio, JWT, chaves privadas, etc.)
-- Análise de **entropia de Shannon**
-- Sistema de redução de falsos positivos (whitelist + blacklist)
-- Varredura de arquivos atuais + **histórico completo do Git**
-- Limite de tamanho de arquivo e proteção contra arquivos problemáticos
-- Resumo claro no terminal + relatório detalhado em JSON
-
-### Geral
-- Logging completo (arquivo + console)
-- Barra de progresso com `tqdm`
-- Configuração externa via YAML
-- Timeouts em todos os subprocessos
-- Tratamento robusto de erros e caracteres inválidos
-- Modo `full` (recon + secrets juntos)
-
 ---
 
 ## Requisitos
